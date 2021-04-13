@@ -5,7 +5,7 @@ import Clipboard from "clipboard";
 import EmojiResultRow from "./EmojiResultRow";
 import "../styles/EmojiResults.css";
 
-function EmojiResult1({emojiData}){
+function EmojiResults({emojiData}){
     const [emojiClipBoard, setEmojiClipBoard] = useState([]);
     // const emojiClipBoard = new Clipboard()
     
@@ -33,7 +33,7 @@ function EmojiResult1({emojiData}){
     )
 }
 
-EmojiResult1.propTypes = {
+EmojiResults.propTypes = {
     emojiData : PropTypes.array
 }
 
