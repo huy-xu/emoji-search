@@ -1,9 +1,10 @@
-import React from 'react';
-import useFilter from './hooks/filter';
+import React, {useEffect} from 'react';
+import UseFilter from './components/Filter';
+import EmojiResults from './components/EmojiResults';
 import './App.css';
 
 function App() {
-  const [filteredEmoji, filterEmoji] = useFilter();
+  const [filteredEmoji, filterEmoji] = UseFilter();
 
   const handleSearchChange = (e) => {
     filterEmoji(e.target.value, 20);
@@ -11,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-    
+      <EmojiResults emojiData={filteredEmoji} onChange = {handleSearchChange} />
     </div>
   );
 }
