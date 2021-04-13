@@ -1,4 +1,6 @@
-import React, {useEffect} from 'react';
+import React from 'react';
+import Header from './components/Header';
+import SearchInput from './components/SearchInput';
 import UseFilter from './components/Filter';
 import EmojiResults from './components/EmojiResults';
 import './App.css';
@@ -12,7 +14,9 @@ function App() {
 
   return (
     <div className="App">
-      <EmojiResults emojiData={filteredEmoji} onChange = {handleSearchChange} />
+      <Header />
+      <SearchInput textChange={handleSearchChange} />
+      <EmojiResults emojiData={filteredEmoji} />
     </div>
   );
 }

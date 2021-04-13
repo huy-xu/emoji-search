@@ -1,11 +1,11 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import "../styles/EmojiResultRow.css"
 
-function EmojiResultRow (emojiData){
+function EmojiResultRow(emojiData) {
     const codePointHex = emojiData.symbol.codePointAt(0).toString(16)
     const src = `//cdn.jsdelivr.net/emojione/assets/png/${codePointHex}.png`
-    
+
     return (
         <div  className="component-emoji-result-row copy-to-clipboard"
         data-clipboard-text={emojiData.symbol}>
@@ -17,7 +17,7 @@ function EmojiResultRow (emojiData){
 }
 
 EmojiResultRow.propTypes = {
-    emojiData : PropTypes.shape({
+    emojiData: PropTypes.shape({
         title: PropTypes.string,
         symbol: PropTypes.string
     })

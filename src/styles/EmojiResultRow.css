@@ -5,6 +5,7 @@
   position: relative;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   cursor: pointer;
+  text-align: left;
 }
 
 .component-emoji-result-row:hover {
