@@ -7,7 +7,7 @@ function EmojiResultRow(emojiData) {
     const src = `//cdn.jsdelivr.net/emojione/assets/png/${codePointHex}.png`
 
     return (
-        <div  className="component-emoji-result-row copy-to-clipboard"
+        <div className="component-emoji-result-row copy-to-clipboard"
         data-clipboard-text={emojiData.symbol}>
             <img alt={emojiData.title} src={src} />
             <span className="title">{emojiData.title}</span>
