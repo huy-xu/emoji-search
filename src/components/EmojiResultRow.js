@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import PropTypes from 'prop-types'
-import "./EmojiResultRow.css"
+import "../styles/EmojiResultRow.css"
 
 function EmojiResultRow (emojiData){
     const codePointHex = emojiData.symbol.codePointAt(0).toString(16)

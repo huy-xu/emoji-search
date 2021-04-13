@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import emojiList from "../emojiList.json";
 
-function useFilter() {
+function UseFilter() {
     const [filteredEmoji, setFilteredEmoji] = useState(emojiList.slice(0, 20));
 
     const filterEmoji = (searchText, maxResults) => {
@@ -22,4 +22,4 @@ function useFilter() {
     return [filteredEmoji, filterEmoji];
 }
 
-export default useFilter;
+export default UseFilter;
